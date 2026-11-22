@@ -1,0 +1,6 @@
+# impostazioni locali
+.claude/
+
+# sistema
+Thumbs.db
+.DS_Store

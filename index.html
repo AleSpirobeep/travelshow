@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Travel Show</title>
+<meta name="description" content="I viaggi, uno per uno: programma, mappe, luoghi e checklist.">
+<meta name="theme-color" content="#0b1424">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Karla:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b1424;--carta:#121d31;--bordo:#243654;--ink:#eef4fb;--fumo:#a9b8cc;--tenue:#6f8099;--verde:#3ddc97;--azzurro:#59d9ff;--arancio:#f09a4d}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:'Karla',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  main{max-width:900px;margin:0 auto;padding:64px 20px 80px}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--verde);margin-bottom:14px}
+  h1{font-family:'Fraunces',serif;font-weight:340;font-size:clamp(44px,9vw,72px);line-height:1;letter-spacing:-.01em}
+  h1 em{font-style:italic;color:var(--azzurro)}
+  .sub{margin-top:14px;color:var(--fumo);max-width:46ch;font-weight:300;font-size:16px}
+  .griglia{margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+  .viaggio{display:block;text-decoration:none;color:inherit;border:1px solid var(--bordo);border-radius:18px;background:var(--carta);overflow:hidden;
+    box-shadow:0 1px 2px rgba(0,0,0,.25),0 8px 24px rgba(0,0,0,.28);transition:transform .18s,box-shadow .18s}
+  .viaggio:hover{transform:translateY(-3px);box-shadow:0 2px 6px rgba(0,0,0,.3),0 18px 44px rgba(0,0,0,.45)}
+  .cover{height:150px;position:relative;overflow:hidden}
+  .cover.lapponia{background:linear-gradient(to bottom,#030814,#0f3351)}
+  .cover.lapponia::before{content:'';position:absolute;left:-20%;top:20%;width:140%;height:40%;border-radius:50%;filter:blur(22px);
+    background:linear-gradient(90deg,transparent,rgba(61,220,151,.9),rgba(89,217,255,.5),transparent)}
+  .cover.lapponia::after{content:'';position:absolute;left:0;right:0;bottom:0;height:26px;background:#e8f1fa;border-top-left-radius:50% 60%;border-top-right-radius:50% 60%}
+  .cover.eclissi{background:linear-gradient(to bottom,#060a1c 0%,#182247 50%,#b05c3f 82%,#f09a4d 100%)}
+  .cover.eclissi::before{content:'';position:absolute;left:50%;top:40%;width:54px;height:54px;border-radius:50%;transform:translate(-50%,-50%);
+    background:#050813;box-shadow:0 0 28px 8px rgba(255,233,196,.85)}
+  .corpo{padding:16px 18px 18px}
+  .quando{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--tenue)}
+  .nome{font-family:'Fraunces',serif;font-size:24px;font-weight:500;margin-top:6px;line-height:1.15}
+  .nome em{font-style:italic;color:var(--verde)}
+  .viaggio.eclissi-card .nome em{color:var(--arancio)}
+  .dove{margin-top:6px;color:var(--fumo);font-size:14px}
+  footer{margin-top:80px;text-align:center;font-family:'Fraunces',serif;font-style:italic;font-size:20px;color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Travel Show</div>
+  <h1>I nostri <em>viaggi</em></h1>
+  <p class="sub">Un sito per ogni viaggio: programma giorno per giorno, mappe, schede dei luoghi e checklist. Si aggiunge una cartella e il prossimo è pronto.</p>
+
+  <div class="griglia">
+    <a class="viaggio" href="lapponia/">
+      <div class="cover lapponia"></div>
+      <div class="corpo">
+        <div class="quando">3 → 9 dicembre 2026</div>
+        <div class="nome">Sotto <em>l’aurora</em></div>
+        <div class="dove">Lapponia · Rovaniemi, Levi, Aurora Village</div>
+      </div>
+    </a>
+    <a class="viaggio eclissi-card" href="https://alespirobeep.github.io/missioneeclissi/">
+      <div class="cover eclissi"></div>
+      <div class="corpo">
+        <div class="quando">8 → 14 agosto 2026</div>
+        <div class="nome">Missione <em>Eclissi</em></div>
+        <div class="dove">Mallorca · l’eclissi totale dal Puig de l’Àguila</div>
+      </div>
+    </a>
+  </div>
+</main>
+<footer>E come sai bene, the best is yet to come.</footer>
+</body>
+</html>
