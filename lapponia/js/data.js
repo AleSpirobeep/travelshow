@@ -44,8 +44,8 @@ const LUOGHI = {
     orari:"10:00–17:00",
     punti:[
       "Il Circolo Polare Artico passa qui: la linea è segnata a terra",
-      "È sulla strada per Levi: la mattina del 4 ci si ferma solo per una foto, la giornata è di Tokkana",
-      "Incontro con Babbo Natale senza prenotazione, con coda"
+      "È sulla strada per Levi: la mattina del 4 ci si sta dalle 10:15 alle 12, poi si parte per Tokkana",
+      "Incontro con Babbo Natale senza prenotazione: entrare è gratis, le foto si pagano; in dicembre la coda va da 20 a 60 minuti, meglio presto"
     ]
   },
   tokkana:{
@@ -144,9 +144,9 @@ const GIORNI = [
    {ora:'22:00',luogo:'arctic',nota:'Cena prenotata: confermare l’orario, perché arriviamo tardi.',badge:'ORARIO?'},
  ]},
  {id:'g2',data:'Venerdì 4 dicembre',titolo:'Le renne di Tokkana',zona:'Rovaniemi → Levi',mappa:true,colore:'#e2a24a',
-  partenza:{ora:'10:30',luogo:'scandic',nota:'Colazione con calma e partenza verso nord sulla strada 79. A Tokkana si arriva per le 13:15.'},
+  partenza:{ora:'10:00',luogo:'scandic',nota:'Colazione e check-out. Prima tappa a 15 minuti: il Circolo Polare.'},
   tappe:[
-   {ora:'09:45',luogo:'santa',nota:'Il Circolo Polare è sulla strada: una foto sulla linea, il tempo di un caffè, e via.',drive:'15 min'},
+   {ora:'10:15',luogo:'santa',nota:'Un’ora e mezza con calma: foto con Babbo Natale (coda breve a quest’ora), la linea del Circolo Polare, una cartolina dall’ufficio postale. Alle 12 si parte per Tokkana.',drive:'15 min'},
    {ora:'13:30',luogo:'tokkana',nota:'Anu ci aspetta: prima le renne, finché c’è un filo di luce, poi il pranzo nella kota. Niente slitta: quest’anno la neve non è ancora abbastanza. Se si libera mezzogiorno, si anticipa.',badge:'DA CONFERMARE',drive:'105 km · 1 h 30'},
    {ora:'16:30',luogo:'cranberry',nota:'Check-in nella casa di Levi, poi noleggio sci e skipass per domani. Le piste illuminate sono aperte fino alle 19, per chi non resiste.',drive:'65 km · 1 h'},
    {ora:'20:00',nome:'Cena a Levi',nota:'Unica serata ancora senza tavolo.',badge:'DA PRENOTARE'},
