@@ -53,7 +53,7 @@ const LUOGHI = {
     rating:5.0, nrec:44,
     punti:[
       "Fattoria di famiglia a Kinisjärvi (Lohiniva), esattamente a metà strada 79 tra Rovaniemi e Levi",
-      "Visita privata dentro i recinti: si accarezzano e si nutrono le renne, poi giro in slitta",
+      "Visita privata dentro i recinti: si accarezzano e si nutrono le renne. Il giro in slitta salta: a inizio dicembre 2026 la neve non basta per la pista",
       "Pranzo nella kota, cucinato sul fuoco: renna saltata, zuppa, cheesecake ai lamponi artici",
       "Indirizzo: Kinisjärventie 127, 97420 Lohiniva · anu@tokkanareindeer.com · +358 40 577 5998",
       "Lì fa freddo sul serio: le recensioni parlano di −25/−32 °C. Strati, strati, strati"
@@ -129,12 +129,12 @@ const LUOGHI = {
    partenza = da dove ci si muove quel giorno. tappe = in ordine.
    Una tappa con `luogo` eredita nome e coordinate dalla scheda. */
 const GIORNI = [
- {id:'g0',data:'Martedì 2 dicembre',titolo:'Vigilia a Roma',zona:'Roma',mappa:false,colore:'#8b93a8',
+ {id:'g0',data:'Mercoledì 2 dicembre',titolo:'Vigilia a Roma',zona:'Roma',mappa:false,colore:'#8b93a8',
   partenza:{ora:'pomeriggio',nome:'Dopo il lavoro',nota:'Si parte per Roma: la notte prima si dorme vicino a Fiumicino.'},
   tappe:[
    {ora:'sera',nome:'A casa di Alessio',nota:'Documenti, bagagli, sveglia puntata. In aeroporto entro le 8:30.'},
  ]},
- {id:'g1',data:'Mercoledì 3 dicembre',titolo:'Roma → Rovaniemi',zona:'In volo',mappa:true,colore:'#5b8def',
+ {id:'g1',data:'Giovedì 3 dicembre',titolo:'Roma → Rovaniemi',zona:'In volo',mappa:true,colore:'#5b8def',
   partenza:{ora:'08:30',nome:'Fiumicino · Terminal 1',nota:'Check-in chiude alle 09:55.'},
   tappe:[
    {ora:'10:40',nome:'Volo AY1762 Roma → Helsinki',nota:'Atterraggio alle 15:10. Scalo di 4 h 30: pranzo e passeggiata in aeroporto.'},
@@ -143,15 +143,15 @@ const GIORNI = [
    {ora:'21:45',luogo:'scandic',nota:'Check-in e valigie in camera.',drive:'10 min dall’aeroporto'},
    {ora:'22:00',luogo:'arctic',nota:'Cena prenotata: confermare l’orario, perché arriviamo tardi.',badge:'ORARIO?'},
  ]},
- {id:'g2',data:'Giovedì 4 dicembre',titolo:'Le renne di Tokkana',zona:'Rovaniemi → Levi',mappa:true,colore:'#e2a24a',
-  partenza:{ora:'09:30',luogo:'scandic',nota:'Colazione e partenza verso nord sulla strada 79. Le ore di luce sono poche: meglio non perderle.'},
+ {id:'g2',data:'Venerdì 4 dicembre',titolo:'Le renne di Tokkana',zona:'Rovaniemi → Levi',mappa:true,colore:'#e2a24a',
+  partenza:{ora:'10:30',luogo:'scandic',nota:'Colazione con calma e partenza verso nord sulla strada 79. A Tokkana si arriva per le 13:15.'},
   tappe:[
-   {ora:'09:45',luogo:'santa',nota:'Il Circolo Polare è sulla strada: una foto sulla linea e via, senza entrare nel vortice del villaggio.',drive:'15 min'},
-   {ora:'12:30',luogo:'tokkana',nota:'Anu e Niko ci aspettano: renne, slitta e pranzo nella kota fino alle 15 circa.',badge:'DA CONFERMARE',drive:'105 km · 1 h 30'},
-   {ora:'16:00',luogo:'cranberry',nota:'Check-in nella casa di Levi, poi noleggio sci e skipass per domani. Le piste illuminate sono aperte fino alle 19, per chi non resiste.',drive:'65 km · 1 h'},
+   {ora:'09:45',luogo:'santa',nota:'Il Circolo Polare è sulla strada: una foto sulla linea, il tempo di un caffè, e via.',drive:'15 min'},
+   {ora:'13:30',luogo:'tokkana',nota:'Anu ci aspetta: prima le renne, finché c’è un filo di luce, poi il pranzo nella kota. Niente slitta: quest’anno la neve non è ancora abbastanza. Se si libera mezzogiorno, si anticipa.',badge:'DA CONFERMARE',drive:'105 km · 1 h 30'},
+   {ora:'16:30',luogo:'cranberry',nota:'Check-in nella casa di Levi, poi noleggio sci e skipass per domani. Le piste illuminate sono aperte fino alle 19, per chi non resiste.',drive:'65 km · 1 h'},
    {ora:'20:00',nome:'Cena a Levi',nota:'Unica serata ancora senza tavolo.',badge:'DA PRENOTARE'},
  ]},
- {id:'g3',data:'Venerdì 5 dicembre',titolo:'Sci sul Levitunturi',zona:'Levi',mappa:true,colore:'#2fb6a3',
+ {id:'g3',data:'Sabato 5 dicembre',titolo:'Sci sul Levitunturi',zona:'Levi',mappa:true,colore:'#2fb6a3',
   partenza:{ora:'09:30',luogo:'cranberry',nota:'Scarponi ai piedi, a piedi fino agli impianti.'},
   tappe:[
    {ora:'10:00',luogo:'levi',nota:'Giornata intera sulle piste. La luce dura fino alle 14, poi si scia sotto i fari.'},
@@ -159,14 +159,14 @@ const GIORNI = [
    {ora:'15:00',luogo:'levi',nota:'Ultime discese sulle piste illuminate, fino alle 19 se le gambe reggono.'},
    {ora:'21:30',luogo:'utsu',nota:'Cena prenotata.'},
  ]},
- {id:'g4',data:'Sabato 6 dicembre',titolo:'Festa dell’Indipendenza',zona:'Levi',mappa:true,colore:'#c86bb1',
+ {id:'g4',data:'Domenica 6 dicembre',titolo:'Festa dell’Indipendenza',zona:'Levi',mappa:true,colore:'#c86bb1',
   partenza:{ora:'09:00',luogo:'cranberry',nota:'Il 6 dicembre è festa nazionale: molti negozi chiusi, impianti e attività aperti. La sera candele alle finestre e fiaccolate.'},
   tappe:[
    {ora:'mattina',luogo:'levitours',nota:'Safari in motoslitta, Classic Wilderness Trail: il giro che abbiamo tolto da Ivalo. Oppure secondo giorno di sci.',badge:'DA PRENOTARE'},
    {ora:'pomeriggio',luogo:'levi',nota:'Pranzo libero, poi piste illuminate, slittino o sauna in casa.'},
    {ora:'18:00',luogo:'saamen',nota:'Cena nella kammi sami, prenotata. Poi fiaccolate in paese per la festa.'},
   ]},
- {id:'g5',data:'Domenica 7 dicembre',titolo:'Verso Aurora Village',zona:'Levi → Ivalo',aurora:true,mappa:true,colore:'#3ddc97',
+ {id:'g5',data:'Lunedì 7 dicembre',titolo:'Verso Aurora Village',zona:'Levi → Ivalo',aurora:true,mappa:true,colore:'#3ddc97',
   partenza:{ora:'entro le 10:00',luogo:'cranberry',nota:'Check-out e rotta a nord-est. 280 km via Sodankylä sulla strada principale, 3 h 30 con strada innevata.'},
   tappe:[
    {ora:'11:45',luogo:'sodankyla',nota:'Sosta benzina e caffè a metà strada.',drive:'150 km · 2 h'},
@@ -175,7 +175,7 @@ const GIORNI = [
    {ora:'19:00',nome:'Cena in struttura',nota:'Pensione completa.'},
    {ora:'20:00',nome:'Caccia all’aurora in auto',nota:'Con la guida, verso il cielo più buio. Prenotata; cancellabile fino alle 17 del giorno stesso se il cielo è coperto.',badge:'AURORA'},
  ]},
- {id:'g6',data:'Lunedì 8 dicembre',titolo:'Husky, kart e ghiaccio',zona:'Aurora Village',aurora:true,mappa:false,colore:'#59d9ff',
+ {id:'g6',data:'Martedì 8 dicembre',titolo:'Husky, kart e ghiaccio',zona:'Aurora Village',aurora:true,mappa:false,colore:'#59d9ff',
   partenza:{ora:'colazione',luogo:'auroravillage',nota:'Tutto a pochi passi dalla suite: giornata piena senza muovere l’auto.'},
   tappe:[
    {ora:'10:30',nome:'Husky Safari, 2 ore',nota:'Si guida la slitta in due, a turno. Prenotato.'},
@@ -184,7 +184,7 @@ const GIORNI = [
    {ora:'17:00',nome:'Wood Sauna e bagno nel ghiaccio',nota:'Sauna a legna privata e tuffo nel buco nel lago. Lo slot delle 15 non c’era: alle 17 è anche più bello, è già notte. Prenotata.'},
    {ora:'20:00',nome:'Cena e aurora dalla suite',nota:'Sera libera: il tetto di vetro fa il resto.',badge:'AURORA'},
  ]},
- {id:'g7',data:'Martedì 9 dicembre',titolo:'Ritorno a Roma',zona:'Ivalo → Roma',mappa:true,colore:'#8b93a8',
+ {id:'g7',data:'Mercoledì 9 dicembre',titolo:'Ritorno a Roma',zona:'Ivalo → Roma',mappa:true,colore:'#8b93a8',
   partenza:{ora:'07:45',luogo:'auroravillage',nota:'Colazione presto e si parte: 290 km fino all’aeroporto, 3 h 45 senza soste. Con meteo incerto partire alle 7:15.'},
   tappe:[
    {ora:'09:45',luogo:'sodankyla',nota:'Sosta veloce, se serve.',drive:'130 km · 1 h 30'},
@@ -199,10 +199,10 @@ const GIORNI = [
    nel browser: non cambiarlo dopo la pubblicazione. */
 const CHECKLIST = [
  {gruppo:'Prenotazioni', nota:'Quello che manca per chiudere il programma.', voci:[
-   {id:'pren-tokkana', t:'Tokkana Reindeer Farm · 4 dic ore 12:30', scad:'in attesa',
-    n:'Email inviata ad anu@tokkanareindeer.com per visita, slitta e pranzo per 4. Se non rispondono entro 2 giorni: WhatsApp +358 40 577 5998.'},
+   {id:'pren-tokkana', t:'Tokkana Reindeer Farm · ven 4 dic ore 13:30', scad:'in attesa',
+    n:'Proposto ad Anu: renne alle 13:30 e pranzo nella kota per 4, niente slitta per mancanza di neve. Se si libera mezzogiorno si anticipa. In attesa di conferma e prezzo.'},
    {id:'pren-cena4', t:'Cena del 4 dicembre a Levi', scad:'subito',
-    n:'L’unica serata ancora senza tavolo. Si arriva da Tokkana verso le 16: un posto in centro a Sirkka, a piedi dalla casa.'},
+    n:'L’unica serata ancora senza tavolo. Si arriva da Tokkana verso le 16:30: un posto in centro a Sirkka, a piedi dalla casa.'},
    {id:'pren-motoslitta', t:'Motoslitta a Levi · 6 dic', scad:'subito',
     n:'Levi Tours, Classic Wilderness Trail. I tour del mattino non ci sono tutti i giorni: scegliere lo slot e prenotare.'},
    {id:'pren-skipass', t:'Skipass e noleggio sci per il 5', scad:'prima di partire',
@@ -237,7 +237,7 @@ const CHECKLIST = [
    {id:'val-crema', t:'Crema viso grassa e burrocacao', n:'Il freddo secco spacca la pelle.'},
    {id:'val-ramponcini', t:'Ramponcini da scarpa', n:'I marciapiedi di Rovaniemi e Levi sono lastre di ghiaccio.'},
  ]},
- {gruppo:'Il giorno della partenza', nota:'Mercoledì 3 dicembre, prima di uscire di casa.', voci:[
+ {gruppo:'Il giorno della partenza', nota:'Giovedì 3 dicembre, prima di uscire di casa.', voci:[
    {id:'gx-documenti', t:'Carte d’identità e carte di credito'},
    {id:'gx-carte', t:'Carte d’imbarco Finnair sul telefono', n:'Prenotazione 8KDHAI.'},
    {id:'gx-conferme', t:'Conferme di hotel, auto e Aurora Village salvate offline'},
